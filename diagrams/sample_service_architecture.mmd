@@ -1,0 +1,7 @@
+graph TD
+    User --> API_Gateway
+    API_Gateway --> Auth_Service
+    API_Gateway --> Service_A
+    Service_A --> Database_A
+    Service_A -->|Publishes| Kafka_Topic
+    Kafka_Topic --> Consumer_Service
