@@ -8,12 +8,12 @@ Current inventory system is tightly coupled to warehouse database.
 - Enable external access via API
 
 ## Context Diagram
-\`\`\`mermaid
+``` mermaid
 graph TD
     UI --> Inventory_API
     Inventory_API --> Inventory_Service
     Inventory_Service --> PostgreSQL
-\`\`\`
+```
 
 ## Risks & Tradeoffs
 - Eventual consistency vs. real-time sync
