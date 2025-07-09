@@ -1,0 +1,5 @@
+graph TD
+    LegacyApp[🧓 Legacy Application] -->|Raw Data| StranglerService[⚙️ OpenShift Strangler Service]
+    StranglerService -->|Transform & JSON Publish| PubSub[📨 Google Pub/Sub Topic]
+    PubSub -->|Push/Subscribe| GKEService[☁️ GKE Domain Service]
+    GKEService --> Spanner[(🗃️ Cloud Spanner)]

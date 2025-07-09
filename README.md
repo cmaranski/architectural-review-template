@@ -1,12 +1,21 @@
-# Architectural Review Template
+# 🏗️ Architectural Review Template
 
-This repository contains reusable templates, checklists, and examples to help software architects conduct technical architecture reviews with clarity, consistency, and quality.
+This repository provides a structured approach for conducting architectural reviews in modern, cloud-native environments.
 
-## What's Inside
-- **Full Architecture Review Template** for in-depth system design
-- **Lightweight Review Template** for quick assessments
-- **Architecture Review Checklist** for consistency
-- **Sample Diagrams** using Mermaid
-- **Example Reviews**
+## 📂 Contents
 
-MIT Licensed.
+- `templates/` - Full and lightweight architectural review templates
+- `checklists/` - Comprehensive review checklist
+- `platform_standards/` - Platform-specific best practices for GCP and OpenShift
+- `diagrams/` - Mermaid diagrams for architecture patterns
+- `patterns/` - Formal write-ups of common system patterns
+
+## 🔗 Platform Standards
+
+- [GCP Standards](platform_standards/gcp_standards.md)
+- [OpenShift Standards](platform_standards/openshift_standards.md)
+- [Shared Architectural Standards](platform_standards/shared_standards.md)
+
+## 🧙 Example Patterns
+
+- [Legacy Messaging → Pub/Sub → GKE → Spanner](patterns/legacy_to_cloud_pipeline.md)
