@@ -1,0 +1,6 @@
+graph TD
+    Quartz[🕰️ Quartz Scheduler] --> SchedulerService[⚙️ OpenShift Scheduler Service]
+    SchedulerService --> DB2[(🧮 DB2 Table)]
+    SchedulerService -->|Transform & Format| Message[🧠 Message Builder]
+    Message --> ActiveMQ[📬 ActiveMQ Queue]
+    ActiveMQ --> LegacySystem[🧓 Legacy Consumer System]
